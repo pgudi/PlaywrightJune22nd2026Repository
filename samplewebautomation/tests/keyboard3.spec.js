@@ -1,0 +1,15 @@
+const {test, expect} = require("@playwright/test")
+
+test("Login Functionality with Keyboard", async({page})=>{
+    await page.goto("https://sgtestinginstituteapp.onrender.com/")
+    await page.waitForTimeout(2000)
+    await page.keyboard.press("Tab")
+    await page.keyboard.type("WELCOME PLAYWRIGHT")
+    await page.keyboard.press("Control+A")
+    await page.waitForTimeout(2000)
+    await page.keyboard.press("Control+X")
+    await page.waitForTimeout(2000)
+    await page.keyboard.press("Control+V")
+    await page.waitForTimeout(2000)
+    await expect(page).toHaveTitle("S G Software Testing Institute")
+})
