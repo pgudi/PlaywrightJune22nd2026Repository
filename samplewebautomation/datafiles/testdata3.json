@@ -1,0 +1,11 @@
+{
+    "login":{
+        "username": "santosh",
+        "password": "Welcome123"
+    },
+    "customer":{
+        "customername":"Lenovo Service",
+        "email":"Service@lenovo.com",
+        "location":"Bangalore"
+    }
+}
