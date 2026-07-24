@@ -1,0 +1,62 @@
+package Calculator;
+
+public class SalaryCalculator {
+
+	public static void main(String[] args) {
+		 // Calling method1 to get the monthly salary
+        double monthlySalary = method1();
+
+        // Calling method2 with the monthly salary to calculate CTC
+        double ctc = method2(monthlySalary);
+
+        // Display the calculated CTC
+        System.out.println("CTC (Cost to Company): ₹" + ctc);
+    }
+
+    // Method1: Get the monthly salary
+    public static double method1() {
+        // You can replace this with actual logic to calculate monthly salary
+        double monthlySalary = 5000.0; // Example monthly salary
+        return monthlySalary;
+    }
+
+    // Method2: Calculate CTC using the monthly salary
+    public static double method2(double monthlySalary) {
+        // Assume CTC includes benefits and bonuses, e.g., 20% bonus
+        double bonusPercentage = 0.20;
+        double ctc = monthlySalary * 12 * (1 + bonusPercentage);
+
+        return ctc;
+    }
+
+	}
+
+
+
+
+package cityoccurrences;
+
+public class CityOccurrences {
+
+	
+		public static void main(String[] args) {
+	        // Sample array of city names
+	        String[] cities = {"Bengluru", "Mysore", "Manglore", "Udupi", "Raichur", "Gulbarga", ""};
+
+	        // City name to count occurrences of
+	        String cityToCount = "Bengluru";
+	        // Initialize a counter variable
+	        int count = 0;
+
+	        // Loop through the array and count occurrences
+	        for (String city : cities) {
+	            if (city.equals(cityToCount)) {
+	                count++;
+	            }
+	        }
+
+	        // Display the count
+	        System.out.println("The city '" + cityToCount + "' appears " + count + " times in the array.");
+	    }
+	}
+
