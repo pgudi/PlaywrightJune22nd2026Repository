@@ -1,0 +1,48 @@
+pacakage constructor;
+import java.util.Arrays;
+class sample{
+// Write a constructor for displaying the missing no from the array
+sample(int arr[]){
+Arrays.sort(arr);
+	int max=arr[arr.length-1];
+	int x=0;
+	for(int i=0; i<max; i++){
+	if(i==arr[x]){
+  	x++;
+}
+else{
+	system.out.println("Missing number:"+i);
+	}
+     }
+}
+
+pacakage constructor;
+class sample{
+// Write a constructor to find the city names"Bangalore"is present in the array	
+sample(String city[]){
+	        boolean flag=false;
+		for( i=0; i<city.length;i++){
+		if(city[i].equals("Bangalore")){
+			flag=true;
+			break;
+		}
+		if(flag==true)
+		system.out.println("Banglore was found");
+		}else{
+		system.out.println("Bangalore was not found")
+	}
+
+
+
+
+Package Construcor;
+class sample
+//Write a constructor for substraction of 2 array values
+sample(int a[], int b[]){
+	if(a.length==b.length){
+		int res[]=new int[a.length];
+		res[i]=a[i]-b[i];
+		System.out.println(res[i]);
+	}
+    }else{
+		System.out.println("Subtraction of 2 array");

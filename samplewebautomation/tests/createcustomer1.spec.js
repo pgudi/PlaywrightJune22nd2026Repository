@@ -3,10 +3,15 @@
     login -> CreateCustomer -> DeleteCustomer -> Logout
 */
 const {test, expect}=require("@playwright/test")
+test.use({viewport:{width:1534, height:864}})
 
 test("Customer Scenario", async({page})=>{
     await page.goto("https://sgtestinginstituteapp.onrender.com/")
     await page.waitForTimeout(3000)
+    const width=await page.viewportSize().width
+    const height=await page.viewportSize().height
+    console.log("View Port Width :"+width);
+    console.log("View Port Height :"+height);
     //Login Action
     await page.locator("//input[@name='username']").fill("pgudi")
     await page.locator("//input[@name='password']").fill("pgudi")
