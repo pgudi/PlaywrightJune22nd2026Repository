@@ -28,7 +28,8 @@ test("Customer Scenario", async({page})=>{
     await page.locator("xpath=(//input[@type='text'])[3]").fill("Testing Purpose")
     await page.waitForTimeout(1000)
     await page.locator("//button[normalize-space()='Save']").click()
-    await page.waitForTimeout(3000)
+    await page.waitForLoadState("networkidle")
+    
     // Delete Customer Action 
     page.on("dialog", async(alertWindow)=>{
         const message=alertWindow.message()
