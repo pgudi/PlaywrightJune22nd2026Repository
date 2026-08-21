@@ -1,0 +1,15 @@
+.bg {
+    background-color: lightcyan;
+}
+
+#header{
+    color: red;
+    text-align: center;
+}
+
+.paragraph{
+    color: greenyellow;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: 500;
+}
